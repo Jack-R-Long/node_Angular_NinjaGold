@@ -1,0 +1,49 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+            <h1 class="bg-warning">Coin {{user.coin}}</h1>
+            <h3 class="text-warning">User: Jack | Get to $500 </h3>
+            </div>
+        </div>
+    </header>
+    <section class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+        
+                        <div class="col">
+                            <h2>Farm</h2>
+                            <p>(earns 10-20 gold)</p>
+                            <button type="button" class="btn btn-warning" (click)="farm()">Find Gold!</button>
+                        </div>
+          
+        
+                        <div class="col">
+                            <h2>Cave</h2>
+                            <p>(earns 5-10 gold)</p>
+                            <input class="btn btn-secondary" type="submit" value="Find Gold!">
+                            <input type="hidden" name="location" value="cave">
+                        </div>
+          
+        
+                        <div class="col">
+                            <h2>House</h2>
+                            <p>(earns 2-5 gold)</p>
+                            <input class="btn btn-primary" type="submit" value="Find Gold!">
+                            <input type="hidden" name="location" value="house">
+                        </div>
+          
+        
+                        <div class="col">
+                            <h2>Casino</h2>
+                            <p>(earns/takes 0-50 gold)</p>
+                            <input class="btn btn-danger" type="submit" value="Find Gold!">
+                            <input type="hidden" name="location" value="casino">
+                        </div>
+          
+                </div>
+        </div>
+
+

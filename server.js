@@ -48,7 +48,7 @@ var User = mongoose.model('User') // We are retrieving this Schema from our Mode
 //    })
 
 // root route to render the index.ejs view
-app.get('/', (req, res)=>{
+app.get('/start', (req, res)=>{
 	User.create({name: 'Jack'}, (err, new_user)=> {
 		if (err) {
 			console.log("Error creating message")
